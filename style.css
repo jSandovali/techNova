@@ -1,0 +1,30 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
+body { background: #e0ffff; color: #333; line-height: 1.6; }
+
+/* --- ENCABEZADO Y NAV --- */
+#site-header { background: #1a1a1a; color: #fff; padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; }
+.logo { font-size: 1.5rem; font-weight: bold; color: #0cf; }
+#main-nav ul { list-style: none; display: flex; gap: 20px; }
+#main-nav a { color: #fff; text-decoration: none; text-transform: uppercase; font-size: 0.9rem; }
+#main-nav a:hover, .footer-nav a:hover { color: #0cf; }
+.hamburguesa { display: none; }
+
+/* --- LAYOUT GENERAL Y SECCIONES --- */
+.hero { text-align: center; padding: 80px 20px; background: #fff; border-bottom: 3px solid #0cf; }
+#servicios, .fila-mixta { padding: 50px 5%; text-align: center; }
+.servicios-grid, .fila-mixta { display: flex; justify-content: center; gap: 25px; flex-wrap: wrap; }
+.fila-mixta { background: #f8f9fa; text-align: left; border-top: 2px solid #ccc; }
+
+/* --- TARJETAS (Servicios, Stats, Nosotros, Contacto) --- */
+.servicios-card, #stats, #nosotros, #Contacto { background: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); flex: 1; min-width: 280px; }
+#stats ul { margin: 10px 0 0 20px; }
+
+/* --- BOTONES Y FORMULARIO --- */
+.btn-cta, .btn-secundario, #form-contacto button { display: inline-block; background: #008080; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 15px; font-weight: bold; border: none; cursor: pointer; }
+.btn-cta:hover, .btn-secundario:hover, #form-contacto button:hover { background: #005959; }
+#form-contacto { display: flex; flex-direction: column; gap: 10px; margin-top: 15px; }
+#form-contacto input, #form-contacto textarea { padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
+
+/* --- PIE DE PÁGINA --- */
+#site-footer { background: #1a1a1a; color: #ccc; text-align: center; padding: 20px; }
+.footer-nav a { color: #0cf; margin: 0 10px; text-decoration: none; font-size: 0.9rem; }
